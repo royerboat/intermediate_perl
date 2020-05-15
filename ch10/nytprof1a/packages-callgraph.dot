@@ -1,0 +1,12 @@
+digraph {
+graph [overlap=false]
+node [shape=doublecircle];
+"main" -> "strict";
+"strict" -> "strict";
+"File::Glob" -> "strict";
+"main" -> "main";
+"File::Glob" -> "warnings";
+"main" -> "XSLoader";
+"main" -> "File::Glob";
+"main" -> "warnings";
+}

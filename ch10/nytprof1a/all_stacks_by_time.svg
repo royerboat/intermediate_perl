@@ -1,0 +1,116 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" width="1200" height="146" onload="init(evt)" viewBox="0 0 1200 146" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs >
+	<linearGradient id="background" y1="0" y2="1" x1="0" x2="0" >
+		<stop stop-color="#eeeeee" offset="5%" />
+		<stop stop-color="#eeeeb0" offset="95%" />
+	</linearGradient>
+</defs>
+<style type="text/css">
+	.func_g:hover { stroke:black; stroke-width:0.5; }
+</style>
+<script type="text/ecmascript">
+<![CDATA[
+	var details;
+	function init(evt) { details = document.getElementById("details").firstChild; }
+	function s(info) { details.nodeValue = "sub " + info; }
+	function c() { details.nodeValue = ' '; }
+]]>
+</script>
+<rect x="0.0" y="0" width="1200.0" height="146.0" fill="url(#background)"  />
+<text text-anchor="middle" x="600" y="24" font-size="17" font-family="Verdana" fill="rgb(0,0,0)"  >Flame Graph</text>
+<text text-anchor="" x="10" y="129" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="details" > </text>
+<g class="func_g" onmouseover="s('warnings::import (9 microseconds, 0.01%)')" onmouseout="c()">
+<title>warnings::import (9 microseconds, 0.01%)</title><a xlink:href="warnings-pm-3-line.html#993" target="_top"><rect x="61.9" y="65" width="0.1" height="15.0" fill="rgb(226,101,7)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('strict::bits (8 microseconds, 0.01%)')" onmouseout="c()">
+<title>strict::bits (8 microseconds, 0.01%)</title><a xlink:href="strict-pm-2-line.html#23" target="_top"><rect x="71.6" y="33" width="0.2" height="15.0" fill="rgb(253,71,40)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('main::BEGIN@3 (479 microseconds, 0.74%)')" onmouseout="c()">
+<title>main::BEGIN@3 (479 microseconds, 0.74%)</title><a xlink:href="ex10-1a-pl-1-line.html#3" target="_top"><rect x="10.0" y="81" width="8.7" height="15.0" fill="rgb(206,40,15)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('all (64,585 microseconds, 100%)')" onmouseout="c()">
+<title>all (64,585 microseconds, 100%)</title><rect x="10.0" y="97" width="1180.0" height="15.0" fill="rgb(226,188,24)" rx="2" ry="2" />
+<text text-anchor="" x="13" y="107.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  ></text>
+</g>
+<g class="func_g" onmouseover="s('warnings::unimport (13 microseconds, 0.02%)')" onmouseout="c()">
+<title>warnings::unimport (13 microseconds, 0.02%)</title><a xlink:href="warnings-pm-3-line.html#1011" target="_top"><rect x="71.2" y="49" width="0.2" height="15.0" fill="rgb(230,190,19)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('XSLoader::load (248 microseconds, 0.38%)')" onmouseout="c()">
+<title>XSLoader::load (248 microseconds, 0.38%)</title><a xlink:href="XSLoader-pm-5-line.html#17" target="_top"><rect x="71.8" y="65" width="4.6" height="15.0" fill="rgb(246,35,29)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('File::Glob::BEGIN@58 (18 microseconds, 0.03%)')" onmouseout="c()">
+<title>File::Glob::BEGIN@58 (18 microseconds, 0.03%)</title><a xlink:href="File-Glob-pm-4-line.html#58" target="_top"><rect x="71.4" y="65" width="0.4" height="15.0" fill="rgb(205,174,49)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('strict::import (16 microseconds, 0.02%)')" onmouseout="c()">
+<title>strict::import (16 microseconds, 0.02%)</title><a xlink:href="strict-pm-2-line.html#42" target="_top"><rect x="70.7" y="49" width="0.3" height="15.0" fill="rgb(208,121,51)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('strict::CORE:regcomp (31 microseconds, 0.05%)')" onmouseout="c()">
+<title>strict::CORE:regcomp (31 microseconds, 0.05%)</title><a xlink:href="strict-pm-2-line.html#strict__CORE_regcomp" target="_top"><rect x="17.8" y="65" width="0.5" height="15.0" fill="rgb(250,213,44)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('main::CORE:ftmtime (33,497 microseconds, 51.87%)')" onmouseout="c()">
+<title>main::CORE:ftmtime (33,497 microseconds, 51.87%)</title><a xlink:href="ex10-1a-pl-1-line.html#main__CORE_ftmtime" target="_top"><rect x="521.5" y="65" width="612.1" height="15.0" fill="rgb(233,186,32)" rx="2" ry="2" />
+<text text-anchor="" x="524.534893828353" y="75.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >main::CORE:ftmtime</text>
+</a>
+</g>
+<g class="func_g" onmouseover="s('strict::unimport (13 microseconds, 0.02%)')" onmouseout="c()">
+<title>strict::unimport (13 microseconds, 0.02%)</title><a xlink:href="strict-pm-2-line.html#47" target="_top"><rect x="71.5" y="49" width="0.3" height="15.0" fill="rgb(239,98,21)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('strict::CORE:match (6 microseconds, 0.01%)')" onmouseout="c()">
+<title>strict::CORE:match (6 microseconds, 0.01%)</title><a xlink:href="strict-pm-2-line.html#strict__CORE_match" target="_top"><rect x="17.6" y="65" width="0.2" height="15.0" fill="rgb(236,6,33)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('main::CORE:glob (3,416 microseconds, 5.29%)')" onmouseout="c()">
+<title>main::CORE:glob (3,416 microseconds, 5.29%)</title><a xlink:href="ex10-1a-pl-1-line.html#main__CORE_glob" target="_top"><rect x="76.4" y="81" width="62.4" height="15.0" fill="rgb(240,96,51)" rx="2" ry="2" />
+<text text-anchor="" x="79.3661425167821" y="91.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >main::C..</text>
+</a>
+</g>
+<g class="func_g" onmouseover="s('File::Glob::BEGIN@3 (28 microseconds, 0.04%)')" onmouseout="c()">
+<title>File::Glob::BEGIN@3 (28 microseconds, 0.04%)</title><a xlink:href="File-Glob-pm-4-line.html#3" target="_top"><rect x="70.5" y="65" width="0.5" height="15.0" fill="rgb(225,77,13)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('main::BEGIN@8 (784 microseconds, 1.21%)')" onmouseout="c()">
+<title>main::BEGIN@8 (784 microseconds, 1.21%)</title><a xlink:href="ex10-1a-pl-1-line.html#8" target="_top"><rect x="62.0" y="81" width="14.4" height="15.0" fill="rgb(214,13,33)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('File::Glob::BEGIN@54 (22 microseconds, 0.03%)')" onmouseout="c()">
+<title>File::Glob::BEGIN@54 (22 microseconds, 0.03%)</title><a xlink:href="File-Glob-pm-4-line.html#54" target="_top"><rect x="71.0" y="65" width="0.4" height="15.0" fill="rgb(213,211,9)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('main::BEGIN@4 (2,369 microseconds, 3.67%)')" onmouseout="c()">
+<title>main::BEGIN@4 (2,369 microseconds, 3.67%)</title><a xlink:href="ex10-1a-pl-1-line.html#4" target="_top"><rect x="18.7" y="81" width="43.3" height="15.0" fill="rgb(237,28,37)" rx="2" ry="2" />
+<text text-anchor="" x="21.7479652673261" y="91.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >main..</text>
+</a>
+</g>
+<g class="func_g" onmouseover="s('warnings::CORE:regcomp (23 microseconds, 0.04%)')" onmouseout="c()">
+<title>warnings::CORE:regcomp (23 microseconds, 0.04%)</title><a xlink:href="warnings-pm-3-line.html#warnings__CORE_regcomp" target="_top"><rect x="61.5" y="65" width="0.4" height="15.0" fill="rgb(231,199,45)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('main::CORE:sort (54,446 microseconds, 84.30%)')" onmouseout="c()">
+<title>main::CORE:sort (54,446 microseconds, 84.30%)</title><a xlink:href="ex10-1a-pl-1-line.html#main__CORE_sort" target="_top"><rect x="138.8" y="81" width="994.8" height="15.0" fill="rgb(206,106,35)" rx="2" ry="2" />
+<text text-anchor="" x="141.780353355781" y="91.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >main::CORE:sort</text>
+</a>
+</g>
+<g class="func_g" onmouseover="s('strict::bits (9 microseconds, 0.01%)')" onmouseout="c()">
+<title>strict::bits (9 microseconds, 0.01%)</title><a xlink:href="strict-pm-2-line.html#23" target="_top"><rect x="70.9" y="33" width="0.1" height="15.0" fill="rgb(211,9,33)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('strict::bits (16 microseconds, 0.02%)')" onmouseout="c()">
+<title>strict::bits (16 microseconds, 0.02%)</title><a xlink:href="strict-pm-2-line.html#23" target="_top"><rect x="18.5" y="49" width="0.2" height="15.0" fill="rgb(211,160,37)" rx="2" ry="2" />
+</a>
+</g>
+<g class="func_g" onmouseover="s('strict::import (24 microseconds, 0.04%)')" onmouseout="c()">
+<title>strict::import (24 microseconds, 0.04%)</title><a xlink:href="strict-pm-2-line.html#42" target="_top"><rect x="18.3" y="65" width="0.4" height="15.0" fill="rgb(253,206,40)" rx="2" ry="2" />
+</a>
+</g>
+</svg>

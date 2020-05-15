@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Oogaboogoo-Date.t
+lib/Oogaboogoo/Date.pm

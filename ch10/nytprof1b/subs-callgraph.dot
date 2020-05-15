@@ -1,0 +1,64 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_XSLoader {
+	label="XSLoader";
+	"XSLoader::load";
+}
+subgraph cluster_File_Glob {
+	label="File::Glob";
+	"File::Glob::BEGIN@58";
+	"File::Glob::CORE:match";
+	"File::Glob::BEGIN@54";
+	"File::Glob::BEGIN@3";
+	"File::Glob::GLOB_CSH";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::CORE:regcomp";
+	"warnings::unimport";
+	"warnings::CORE:match";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::unimport";
+	"strict::CORE:match";
+	"strict::import";
+	"strict::bits";
+	"strict::CORE:regcomp";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@4";
+	"main::BEGIN@10";
+	"main::BEGIN@3";
+	"main::RUNTIME";
+	"main::CORE:ftmtime";
+	"main::NULL";
+	"main::CORE:sort";
+	"main::CORE:glob";
+}
+"main::BEGIN@10" -> "File::Glob::BEGIN@3";
+"strict::import" -> "strict::bits";
+"strict::unimport" -> "strict::bits";
+"main::NULL" -> "main::BEGIN@10";
+"main::BEGIN@10" -> "File::Glob::BEGIN@54";
+"main::RUNTIME" -> "main::CORE:ftmtime";
+"main::BEGIN@4" -> "warnings::CORE:regcomp";
+"main::BEGIN@10" -> "File::Glob::CORE:match";
+"main::BEGIN@10" -> "File::Glob::GLOB_CSH";
+"main::BEGIN@3" -> "strict::CORE:match";
+"main::BEGIN@10" -> "File::Glob::BEGIN@58";
+"File::Glob::BEGIN@3" -> "strict::import";
+"main::BEGIN@3" -> "strict::import";
+"main::BEGIN@3" -> "strict::CORE:regcomp";
+"main::NULL" -> "main::BEGIN@4";
+"main::BEGIN@4" -> "warnings::import";
+"main::BEGIN@4" -> "warnings::CORE:match";
+"File::Glob::BEGIN@58" -> "strict::unimport";
+"File::Glob::BEGIN@54" -> "warnings::unimport";
+"main::RUNTIME" -> "main::CORE:sort";
+"main::RUNTIME" -> "main::CORE:glob";
+"main::BEGIN@10" -> "XSLoader::load";
+"main::NULL" -> "main::BEGIN@3";
+}
